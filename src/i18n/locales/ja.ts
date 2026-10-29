@@ -1,4 +1,19 @@
 import type { Resources } from "./en";
+import { shellI18n } from "@/pages/workday/i18n/shell";
+import { roomsI18n } from "@/pages/workday/i18n/rooms";
+import { allocationI18n } from "@/pages/workday/i18n/allocation";
+import { scheduleI18n } from "@/pages/workday/i18n/schedule";
+import { tasksI18n } from "@/pages/workday/i18n/tasks";
+import { workflowI18n } from "@/pages/workday/i18n/workflow";
+import { cleaningTimesI18n } from "@/pages/workday/i18n/cleaningTimes";
+import { analyticsI18n } from "@/pages/workday/i18n/analytics";
+import { biI18n } from "@/pages/workday/i18n/bi";
+import { sopsI18n } from "@/pages/workday/i18n/sops";
+import { checklistsI18n } from "@/pages/workday/i18n/checklists";
+import { maintenanceI18n } from "@/pages/workday/i18n/maintenance";
+import { modulesI18n } from "@/pages/workday/i18n/modules";
+import { lostFoundI18n } from "@/pages/workday/i18n/lostFound";
+import { chatI18n } from "@/pages/workday/i18n/chat";
 
 export const ja: Resources = {
   common: {
@@ -404,5 +419,181 @@ export const ja: Resources = {
       loading: "構成を読み込み中…",
       empty: "施設がありません。",
     },
+  },
+  mobile: {
+    demo: {
+      login: "ログイン",
+      accounts: "アカウント",
+      rooms: "客室",
+      roomDetail: "客室詳細",
+      addRepair: "修理追加",
+      inspection: "客室点検",
+      guest: "ゲストリレーション",
+      chat: "チャット",
+    },
+    a11y: {
+      back: "戻る",
+      close: "閉じる",
+      menu: "メニュー",
+      sort: "並び替え",
+      filter: "絞り込み",
+      add: "追加",
+      assign: "割り当て",
+    },
+    tabs: {
+      rooms: "客室",
+      guestRelations: "ゲストリレーション",
+      maintenance: "メンテナンス",
+      tasks: "タスク",
+      chat: "チャット",
+    },
+    login: {
+      welcome: "ようこそ",
+      toApp: "app.tms-web へ",
+      emailOrUsername: "メールまたはユーザー名",
+      password: "パスワード",
+      passwordPlaceholder: "パスワードを入力",
+      signIn: "ログイン",
+      sso: "シングルサインオン",
+      faceId: "Face ID でログイン",
+      version: "バージョン {{version}}",
+    },
+    accounts: {
+      title: "アカウントを選択",
+      another: "別のアカウント",
+    },
+    rooms: {
+      title: "客室",
+      roomList: "客室リスト",
+      turndown: "ターンダウン",
+      search: "検索",
+      floor: "{{num}}階",
+      noResults: "該当する客室がありません",
+    },
+    roomDetail: {
+      roomType: "ツインデラックス",
+      departureClean: "チェックアウト清掃",
+      credits: "{{count}} クレジット",
+      statusLabel: "ステータス：",
+      departed: "出発済み",
+      checkedOut: "チェックアウト済み",
+      inspected: "点検済み",
+      amenities: "アメニティ",
+      minibar: "ミニバー",
+      linen: "リネン",
+      tasks: "タスク",
+      maintenance: "メンテナンス",
+      cleaningFlaws: "清掃不備",
+      audits: "監査／チェックリスト",
+      roomSops: "客室 SOP",
+      statusDirty: "清掃待ち",
+      statusCleaned: "清掃済み",
+      statusInspected: "点検済み",
+      occStayover: "連泊",
+      occEmpty: "空室",
+      occDeparture: "チェックアウト",
+      occOutOfOrder: "故障中",
+      cleanLight: "簡易清掃",
+      cleanNone: "清掃不要",
+    },
+    repair: {
+      title: "新しい修理を追加",
+      done: "完了",
+      assistant: "tms-web アシスタント",
+      repairStatus: "修理ステータス",
+      internalRepair: "内部修理",
+      general: "一般",
+      selectCode: "コードを選択",
+      startTyping: "入力を開始…",
+      attachments: "添付ファイル",
+      addPhotoOrVideo: "写真または動画を追加",
+      selectSpace: "スペースを選択",
+      addMoreOptions: "その他のオプション",
+      created: "修理を作成しました",
+      codes: {
+        plumbing: "水回り",
+        electrical: "電気設備",
+        furniture: "家具",
+        hvac: "空調",
+      },
+    },
+    inspection: {
+      title: "客室 {{room}} 点検",
+      summary: "概要",
+      passed: "合格 {{passed}}/{{total}}",
+      commentPlaceholder: "コメントを追加…",
+      bedroom: "ベッドルーム",
+      bathroom: "バスルーム",
+      confirm: "確認",
+      doneToast: "点検完了（合格 {{passed}}/{{total}}）",
+      saveDraft: "下書きとして保存しますか？",
+      items: {
+        hangers: "ハンガー (8x)",
+        dndCard: "ドントディスターブカード (1x)",
+        bin: "ゴミ箱",
+        bedMade: "ベッドメイキング",
+        mirror: "鏡",
+        towels: "タオル (4x)",
+        amenitiesRefill: "アメニティ補充",
+        shower: "シャワー",
+      },
+    },
+    guest: {
+      title: "ゲストリレーション",
+      negative: "ネガティブ",
+      positive: "ポジティブ",
+      costOfQuality: "品質コスト",
+      resolved: "解決済み",
+      unresolved: "未解決",
+      addFeedback: "フィードバックを追加",
+      date: "2026年1月30日",
+      items: {
+        coldDish: "ルームサービス－料理が冷めていた",
+        wrongAmount: "フロント－請求金額の誤り",
+        loudMusic: "ロビーバー－音楽がうるさい",
+        slowCheckIn: "フロント－チェックインが遅い",
+        badBreakfast: "朝食－料理の選択肢が乏しい",
+        greatSpa: "スパ－素晴らしいサービス",
+        friendlyStaff: "フロント－スタッフがとても親切",
+      },
+      form: {
+        titlePlaceholder: "フィードバックのタイトル",
+        notePlaceholder: "メモ（任意）",
+        submit: "送信",
+      },
+      coq: {
+        cases: "ネガティブ件数",
+        perCase: "1件あたりのコスト",
+        total: "合計",
+      },
+    },
+    chat: {
+      title: "チャット",
+      inputPlaceholder: "メッセージを入力…",
+      send: "送信",
+      photo: "写真",
+      showOriginal: "原文を表示",
+      hideOriginal: "原文を隠す",
+      originalEn: "英語",
+      originalJa: "日本語",
+      membersCount: "{{count}} 名のメンバー",
+    },
+  },
+  workday: {
+    shell: shellI18n.ja,
+    rooms: roomsI18n.ja,
+    allocation: allocationI18n.ja,
+    schedule: scheduleI18n.ja,
+    tasks: tasksI18n.ja,
+    workflow: workflowI18n.ja,
+    cleaningTimes: cleaningTimesI18n.ja,
+    analytics: analyticsI18n.ja,
+    bi: biI18n.ja,
+    maintenance: maintenanceI18n.ja,
+    modules: modulesI18n.ja,
+    lostFound: lostFoundI18n.ja,
+    sops: sopsI18n.ja,
+    checklists: checklistsI18n.ja,
+    chat: chatI18n.ja,
   },
 };

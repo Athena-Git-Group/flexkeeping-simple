@@ -1,3 +1,19 @@
+import { shellI18n } from "@/pages/workday/i18n/shell";
+import { roomsI18n } from "@/pages/workday/i18n/rooms";
+import { allocationI18n } from "@/pages/workday/i18n/allocation";
+import { scheduleI18n } from "@/pages/workday/i18n/schedule";
+import { tasksI18n } from "@/pages/workday/i18n/tasks";
+import { workflowI18n } from "@/pages/workday/i18n/workflow";
+import { cleaningTimesI18n } from "@/pages/workday/i18n/cleaningTimes";
+import { analyticsI18n } from "@/pages/workday/i18n/analytics";
+import { biI18n } from "@/pages/workday/i18n/bi";
+import { sopsI18n } from "@/pages/workday/i18n/sops";
+import { checklistsI18n } from "@/pages/workday/i18n/checklists";
+import { lostFoundI18n } from "@/pages/workday/i18n/lostFound";
+import { maintenanceI18n } from "@/pages/workday/i18n/maintenance";
+import { modulesI18n } from "@/pages/workday/i18n/modules";
+import { chatI18n } from "@/pages/workday/i18n/chat";
+
 export const en = {
   common: {
     save: "Save",
@@ -404,6 +420,190 @@ export const en = {
       empty: "No properties.",
     },
   },
+  mobile: {
+    demo: {
+      login: "Login",
+      accounts: "Accounts",
+      rooms: "Rooms",
+      roomDetail: "Room detail",
+      addRepair: "Add repair",
+      inspection: "Inspection",
+      guest: "Guest relations",
+      chat: "Chat",
+    },
+    a11y: {
+      back: "Back",
+      close: "Close",
+      menu: "Menu",
+      sort: "Sort",
+      filter: "Filter",
+      add: "Add",
+      assign: "Assign",
+    },
+    tabs: {
+      rooms: "Rooms",
+      guestRelations: "Guest relations",
+      maintenance: "Maintenance",
+      tasks: "Tasks",
+      chat: "Chat",
+    },
+    login: {
+      welcome: "Welcome",
+      toApp: "to app.tms-web",
+      emailOrUsername: "Email or Username",
+      password: "Password",
+      passwordPlaceholder: "Enter your password",
+      signIn: "Sign in",
+      sso: "Single Sign-On",
+      faceId: "Sign in with Face ID",
+      version: "Version {{version}}",
+    },
+    accounts: {
+      title: "Choose An Account",
+      another: "Another account",
+    },
+    rooms: {
+      title: "Rooms",
+      roomList: "Room list",
+      turndown: "Turndown",
+      search: "Search",
+      floor: "{{num}}. Floor",
+      noResults: "No rooms found",
+    },
+    roomDetail: {
+      roomType: "Twin Deluxe",
+      departureClean: "Departure Clean",
+      credits: "{{count}} credits",
+      statusLabel: "Status:",
+      departed: "Departed",
+      checkedOut: "Checked out",
+      inspected: "Inspected",
+      amenities: "Amenities",
+      minibar: "Minibar",
+      linen: "Linen",
+      tasks: "Tasks",
+      maintenance: "Maintenance",
+      cleaningFlaws: "Cleaning Flaws",
+      audits: "Audits / Checklists",
+      roomSops: "Room SOP's",
+      statusDirty: "Dirty",
+      statusCleaned: "Cleaned",
+      statusInspected: "Inspected",
+      occStayover: "Stayover",
+      occEmpty: "Vacant",
+      occDeparture: "Departure",
+      occOutOfOrder: "Out of order",
+      cleanLight: "Light Clean",
+      cleanNone: "No Cleaning",
+    },
+    repair: {
+      title: "Add a new repair",
+      done: "Done",
+      assistant: "tms-web Assistant",
+      repairStatus: "Repair status",
+      internalRepair: "Internal repair",
+      general: "General",
+      selectCode: "Select code",
+      startTyping: "Start typing …",
+      attachments: "Attachments",
+      addPhotoOrVideo: "Add photo or video",
+      selectSpace: "Select space",
+      addMoreOptions: "Add more options",
+      created: "Repair created",
+      codes: {
+        plumbing: "Plumbing",
+        electrical: "Electrical",
+        furniture: "Furniture",
+        hvac: "Air conditioning",
+      },
+    },
+    inspection: {
+      title: "Room {{room}} inspection",
+      summary: "Summary",
+      passed: "Passed {{passed}}/{{total}}",
+      commentPlaceholder: "Add a comment …",
+      bedroom: "Bedroom",
+      bathroom: "Bathroom",
+      confirm: "Confirm",
+      doneToast: "Inspection completed ({{passed}}/{{total}})",
+      saveDraft: "Save as draft?",
+      items: {
+        hangers: "Hangers (8x)",
+        dndCard: "Do-not-disturb card (1x)",
+        bin: "Waste bin",
+        bedMade: "Bed made",
+        mirror: "Mirror",
+        towels: "Towels (4x)",
+        amenitiesRefill: "Amenities refill",
+        shower: "Shower",
+      },
+    },
+    guest: {
+      title: "Guest Relations",
+      negative: "Negative",
+      positive: "Positive",
+      costOfQuality: "Cost of quality",
+      resolved: "Resolved",
+      unresolved: "Unresolved",
+      addFeedback: "Add feedback",
+      date: "30 Jan 2026",
+      items: {
+        coldDish: "Room service - cold dish",
+        wrongAmount: "Reception - wrong amount charged",
+        loudMusic: "Lobby bar - music is too loud",
+        slowCheckIn: "Reception - slow check in",
+        badBreakfast: "Breakfast - bad selection of food",
+        greatSpa: "Spa - excellent service",
+        friendlyStaff: "Reception - very friendly staff",
+      },
+      form: {
+        titlePlaceholder: "Feedback title",
+        notePlaceholder: "Note (optional)",
+        submit: "Submit",
+      },
+      coq: {
+        cases: "Negative cases",
+        perCase: "Cost per case",
+        total: "Total",
+      },
+    },
+    chat: {
+      title: "Chat",
+      inputPlaceholder: "Type a message…",
+      send: "Send",
+      photo: "Photo",
+      showOriginal: "Show original",
+      hideOriginal: "Hide original",
+      originalEn: "English",
+      originalJa: "Japanese",
+      membersCount: "{{count}} members",
+    },
+  },
+  workday: {
+    shell: shellI18n.en,
+    rooms: roomsI18n.en,
+    allocation: allocationI18n.en,
+    schedule: scheduleI18n.en,
+    tasks: tasksI18n.en,
+    workflow: workflowI18n.en,
+    cleaningTimes: cleaningTimesI18n.en,
+    analytics: analyticsI18n.en,
+    bi: biI18n.en,
+    maintenance: maintenanceI18n.en,
+    modules: modulesI18n.en,
+    lostFound: lostFoundI18n.en,
+    sops: sopsI18n.en,
+    checklists: checklistsI18n.en,
+    chat: chatI18n.en,
+  },
 };
 
-export type Resources = typeof en;
+/**
+ * Recursively widens literal string types to `string` so that zh-TW / ja can
+ * satisfy the en shape even though the workday fragments are `as const`.
+ */
+type Widen<T> = {
+  [K in keyof T]: T[K] extends string ? string : Widen<T[K]>;
+};
+
+export type Resources = Widen<typeof en>;

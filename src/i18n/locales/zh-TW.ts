@@ -1,4 +1,19 @@
 import type { Resources } from "./en";
+import { shellI18n } from "@/pages/workday/i18n/shell";
+import { roomsI18n } from "@/pages/workday/i18n/rooms";
+import { allocationI18n } from "@/pages/workday/i18n/allocation";
+import { scheduleI18n } from "@/pages/workday/i18n/schedule";
+import { tasksI18n } from "@/pages/workday/i18n/tasks";
+import { workflowI18n } from "@/pages/workday/i18n/workflow";
+import { cleaningTimesI18n } from "@/pages/workday/i18n/cleaningTimes";
+import { analyticsI18n } from "@/pages/workday/i18n/analytics";
+import { biI18n } from "@/pages/workday/i18n/bi";
+import { sopsI18n } from "@/pages/workday/i18n/sops";
+import { checklistsI18n } from "@/pages/workday/i18n/checklists";
+import { maintenanceI18n } from "@/pages/workday/i18n/maintenance";
+import { modulesI18n } from "@/pages/workday/i18n/modules";
+import { lostFoundI18n } from "@/pages/workday/i18n/lostFound";
+import { chatI18n } from "@/pages/workday/i18n/chat";
 
 export const zhTW: Resources = {
   common: {
@@ -400,5 +415,181 @@ export const zhTW: Resources = {
       loading: "載入階層中…",
       empty: "沒有館別。",
     },
+  },
+  mobile: {
+    demo: {
+      login: "登入",
+      accounts: "帳號",
+      rooms: "客房",
+      roomDetail: "房間詳情",
+      addRepair: "新增報修",
+      inspection: "房間檢查",
+      guest: "賓客關係",
+      chat: "聊天",
+    },
+    a11y: {
+      back: "返回",
+      close: "關閉",
+      menu: "選單",
+      sort: "排序",
+      filter: "篩選",
+      add: "新增",
+      assign: "指派",
+    },
+    tabs: {
+      rooms: "客房",
+      guestRelations: "賓客關係",
+      maintenance: "維修",
+      tasks: "任務",
+      chat: "聊天",
+    },
+    login: {
+      welcome: "歡迎",
+      toApp: "使用 app.tms-web",
+      emailOrUsername: "電子郵件或使用者名稱",
+      password: "密碼",
+      passwordPlaceholder: "請輸入密碼",
+      signIn: "登入",
+      sso: "單一登入",
+      faceId: "使用 Face ID 登入",
+      version: "版本 {{version}}",
+    },
+    accounts: {
+      title: "選擇帳號",
+      another: "其他帳號",
+    },
+    rooms: {
+      title: "客房",
+      roomList: "房間列表",
+      turndown: "夜床服務",
+      search: "搜尋",
+      floor: "{{num}} 樓",
+      noResults: "找不到符合的房間",
+    },
+    roomDetail: {
+      roomType: "豪華雙床房",
+      departureClean: "退房清潔",
+      credits: "{{count}} 點數",
+      statusLabel: "狀態：",
+      departed: "已退房",
+      checkedOut: "已結帳退房",
+      inspected: "已檢查",
+      amenities: "備品",
+      minibar: "迷你吧",
+      linen: "布巾",
+      tasks: "任務",
+      maintenance: "維修",
+      cleaningFlaws: "清潔缺失",
+      audits: "稽核／檢查表",
+      roomSops: "客房 SOP",
+      statusDirty: "待清潔",
+      statusCleaned: "已清潔",
+      statusInspected: "已檢查",
+      occStayover: "續住",
+      occEmpty: "空房",
+      occDeparture: "退房",
+      occOutOfOrder: "故障房",
+      cleanLight: "輕度清潔",
+      cleanNone: "無需清潔",
+    },
+    repair: {
+      title: "新增報修",
+      done: "完成",
+      assistant: "tms-web 助理",
+      repairStatus: "報修狀態",
+      internalRepair: "內部維修",
+      general: "一般",
+      selectCode: "選擇代碼",
+      startTyping: "開始輸入…",
+      attachments: "附件",
+      addPhotoOrVideo: "新增照片或影片",
+      selectSpace: "選擇空間",
+      addMoreOptions: "更多選項",
+      created: "已建立報修",
+      codes: {
+        plumbing: "水電管線",
+        electrical: "電氣設備",
+        furniture: "家具",
+        hvac: "空調",
+      },
+    },
+    inspection: {
+      title: "房 {{room}} 檢查",
+      summary: "摘要",
+      passed: "通過 {{passed}}/{{total}}",
+      commentPlaceholder: "新增評論…",
+      bedroom: "臥室",
+      bathroom: "浴室",
+      confirm: "確認",
+      doneToast: "檢查完成（通過 {{passed}}/{{total}}）",
+      saveDraft: "存成草稿？",
+      items: {
+        hangers: "衣架 (8x)",
+        dndCard: "請勿打擾卡 (1x)",
+        bin: "垃圾桶",
+        bedMade: "床鋪整理",
+        mirror: "鏡子",
+        towels: "毛巾 (4x)",
+        amenitiesRefill: "備品補充",
+        shower: "淋浴間",
+      },
+    },
+    guest: {
+      title: "賓客關係",
+      negative: "負評",
+      positive: "好評",
+      costOfQuality: "品質成本",
+      resolved: "已解決",
+      unresolved: "未解決",
+      addFeedback: "新增回饋",
+      date: "2026年1月30日",
+      items: {
+        coldDish: "客房服務－餐點已冷",
+        wrongAmount: "櫃檯－金額收取錯誤",
+        loudMusic: "大廳酒吧－音樂太大聲",
+        slowCheckIn: "櫃檯－入住手續太慢",
+        badBreakfast: "早餐－餐點選擇不佳",
+        greatSpa: "水療－服務非常出色",
+        friendlyStaff: "櫃檯－人員非常親切",
+      },
+      form: {
+        titlePlaceholder: "回饋標題",
+        notePlaceholder: "備註（選填）",
+        submit: "送出",
+      },
+      coq: {
+        cases: "負評件數",
+        perCase: "每件成本",
+        total: "總計",
+      },
+    },
+    chat: {
+      title: "聊天",
+      inputPlaceholder: "輸入訊息…",
+      send: "送出",
+      photo: "照片",
+      showOriginal: "顯示原文",
+      hideOriginal: "隱藏原文",
+      originalEn: "英文",
+      originalJa: "日文",
+      membersCount: "{{count}} 位成員",
+    },
+  },
+  workday: {
+    shell: shellI18n.zhTW,
+    rooms: roomsI18n.zhTW,
+    allocation: allocationI18n.zhTW,
+    schedule: scheduleI18n.zhTW,
+    tasks: tasksI18n.zhTW,
+    workflow: workflowI18n.zhTW,
+    cleaningTimes: cleaningTimesI18n.zhTW,
+    analytics: analyticsI18n.zhTW,
+    bi: biI18n.zhTW,
+    maintenance: maintenanceI18n.zhTW,
+    modules: modulesI18n.zhTW,
+    lostFound: lostFoundI18n.zhTW,
+    sops: sopsI18n.zhTW,
+    checklists: checklistsI18n.zhTW,
+    chat: chatI18n.zhTW,
   },
 };
